@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProfitChain</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://files.catbox.moe/51llml.jpg" alt="ProfitChain Logo">
+      <h1>ProfitChain</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#account">Account</a></li>
+        <li><a href="#myteam">My Team</a></li>
+        <li><a href="#referral">Referral</a></li>
+        <li><a href="#info">Your ID Info</a></li>
+      </ul>
+    </nav>
+  </header>  <section class="hero">
+    <h2>Welcome to ProfitChain - Powered by POL Coin</h2>
+    <p>Track your progress, grow your team, and earn with confidence.</p>
+  </section>  <section id="account" class="card">
+    <h3>Your Account</h3>
+    <p><strong>Current POL Balance:</strong> 120 POL</p>
+    <p><strong>Total Earnings:</strong> 430 POL</p>
+  </section>  <section id="myteam" class="card">
+    <h3>My Team</h3>
+    <p><strong>Total Referrals:</strong> 15</p>
+    <p><strong>Direct Referrals:</strong> 5</p>
+    <p><strong>Community Size:</strong> 42</p>
+  </section>  <section id="referral" class="card">
+    <h3>Your Referral Link</h3>
+    <input type="text" id="refLink" value="https://profitchain.com/ref/your-id" readonly>
+    <button onclick="copyReferral()">Copy Referral Link</button>
+  </section>  <section id="info" class="card">
+    <h3>Your ID Info</h3>
+    <p><strong>Your POL Earnings:</strong> 430 POL</p>
+    <p><strong>Total Referrals:</strong> 15</p>
+    <p><strong>Current Level:</strong> Champion</p>
+  </section>  <section class="levels">
+    <h3>Levels Overview</h3>
+    <ul>
+      <li>Level 1: Profit</li>
+      <li>Level 2: Polna</li>
+      <li>Level 3: Chain</li>
+      <li>Level 4: Word</li>
+      <li>Level 5: Ambassador</li>
+      <li>Level 6: Icon</li>
+      <li>Level 7: Champion</li>
+      <li>Level 8: Mantour</li>
+      <li>Level 9: Fax Stick</li>
+      <li>Level 10: Head</li>
+    </ul>
+  </section>  <footer>
+    <p>&copy; 2025 ProfitChain | Powered by POL Coin</p>
+  </footer>  <script>
+    function copyReferral() {
+      var copyText = document.getElementById("refLink");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("Referral Link Copied: " + copyText.value);
+    }
+  </script></body>
+  </html>
